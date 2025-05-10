@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reading Evaluation</title>
+</head>
+<body>
+  <h1>📚 Student Reading Evaluation</h1>
+  <form action="/evaluate" method="post" enctype="multipart/form-data">
+    <label for="expected_text">Expected Text:</label><br>
+    <textarea id="expected_text" name="expected_text" rows="6" cols="80">{{ dummy_text }}</textarea><br><br>
+
+    <label for="audio">Upload Your Audio:</label><br>
+    <input type="file" id="audio" name="audio" accept="audio/*" required><br><br>
+
+    <button type="submit">Evaluate</button>
+  </form>
+</body>
+</html>
